@@ -1,0 +1,208 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 178, icons/*.png */
+.icons-sprite, .icons-dribbble-icon-inactive, .icons-dribbble-icon, .icons-email-icon-inactive, .icons-email-icon, .icons-fb-icon-inactive, .icons-fb-icon, .icons-github-icon-inactive, .icons-github-icon, .icons-insta-icon-inactive, .icons-insta-icon, .icons-link-icon, .icons-linkedin-icon-inactive, .icons-linkedin-icon, .icons-monogram, .icons-pinterest-icon-inactive, .icons-pinterest-icon, .icons-twitter-icon-inactive, .icons-twitter-icon {
+  background: url('/images/icons-s7a2b1eda2b.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribbble-icon-inactive {
+  background-position: 0 -584px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribbble-icon {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email-icon-inactive {
+  background-position: 0 -773px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email-icon {
+  background-position: 0 -438px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fb-icon-inactive {
+  background-position: 0 -988px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-fb-icon {
+  background-position: 0 -511px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github-icon-inactive {
+  background-position: 0 -646px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github-icon {
+  background-position: 0 -146px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-insta-icon-inactive {
+  background-position: 0 -879px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-insta-icon {
+  background-position: 0 -219px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-link-icon {
+  background-position: 0 -1096px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin-icon-inactive {
+  background-position: 0 -936px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin-icon {
+  background-position: 0 -365px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-monogram {
+  background-position: 0 -1048px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pinterest-icon-inactive {
+  background-position: 0 -709px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pinterest-icon {
+  background-position: 0 -73px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter-icon-inactive {
+  background-position: 0 -825px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter-icon {
+  background-position: 0 -292px;
+}
+
+/* line 98, logos/*.png */
+.logos-sprite, .logos-MAYA_logo, .logos-circle-logo, .logos-jawbone-logo, .logos-largeLogoBlack, .logos-largeLogoBordeaux, .logos-largeLogoWhite, .logos-lyft-logo, .logos-medLogoBordeaux {
+  background: url('/images/logos-s6769f530c9.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-MAYA_logo {
+  background-position: 0 -839px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-circle-logo {
+  background-position: 0 -295px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-jawbone-logo {
+  background-position: 0 -1045px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-largeLogoBlack {
+  background-position: 0 -946px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-largeLogoBordeaux {
+  background-position: 0 -595px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-largeLogoWhite {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-lyft-logo {
+  background-position: 0 -694px;
+}
+
+/* line 60, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logos-medLogoBordeaux {
+  background-position: 0 -103px;
+}

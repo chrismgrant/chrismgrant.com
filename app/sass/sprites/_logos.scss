@@ -1,0 +1,137 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$logos-sprite-dimensions : false !default;
+$logos-use-percentages   : false !default;
+$logos-position          : 0% !default;
+$logos-spacing           : 0 !default;
+$logos-repeat            : no-repeat !default;
+$logos-prefix            : '' !default;
+$logos-clean-up          : true !default;
+$logos-layout            : vertical !default;
+$logos-inline            : false !default;
+$logos-sort-by           : 'none' !default;
+$logos-class-separator   : $default-sprite-separator !default;
+$logos-sprite-base-class : ".logos#{$logos-class-separator}sprite" !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $logos-circle-logo-position: $logos-position !default;
+   $logos-circle-logo-spacing:  $logos-spacing !default;
+   $logos-circle-logo-repeat:   $logos-repeat !default;
+ 
+   $logos-jawbone-logo-position: $logos-position !default;
+   $logos-jawbone-logo-spacing:  $logos-spacing !default;
+   $logos-jawbone-logo-repeat:   $logos-repeat !default;
+ 
+   $logos-largeLogoBlack-position: $logos-position !default;
+   $logos-largeLogoBlack-spacing:  $logos-spacing !default;
+   $logos-largeLogoBlack-repeat:   $logos-repeat !default;
+ 
+   $logos-largeLogoBordeaux-position: $logos-position !default;
+   $logos-largeLogoBordeaux-spacing:  $logos-spacing !default;
+   $logos-largeLogoBordeaux-repeat:   $logos-repeat !default;
+ 
+   $logos-largeLogoWhite-position: $logos-position !default;
+   $logos-largeLogoWhite-spacing:  $logos-spacing !default;
+   $logos-largeLogoWhite-repeat:   $logos-repeat !default;
+ 
+   $logos-lyft-logo-position: $logos-position !default;
+   $logos-lyft-logo-spacing:  $logos-spacing !default;
+   $logos-lyft-logo-repeat:   $logos-repeat !default;
+ 
+   $logos-medLogoBordeaux-position: $logos-position !default;
+   $logos-medLogoBordeaux-spacing:  $logos-spacing !default;
+   $logos-medLogoBordeaux-repeat:   $logos-repeat !default;
+ 
+
+ $logos-sprites: sprite-map("logos/*.png",
+ 
+   $logos-circle-logo-position: $logos-circle-logo-position, 
+   $logos-circle-logo-spacing:  $logos-circle-logo-spacing, 
+   $logos-circle-logo-repeat:   $logos-circle-logo-repeat,
+ 
+   $logos-jawbone-logo-position: $logos-jawbone-logo-position, 
+   $logos-jawbone-logo-spacing:  $logos-jawbone-logo-spacing, 
+   $logos-jawbone-logo-repeat:   $logos-jawbone-logo-repeat,
+ 
+   $logos-largeLogoBlack-position: $logos-largeLogoBlack-position, 
+   $logos-largeLogoBlack-spacing:  $logos-largeLogoBlack-spacing, 
+   $logos-largeLogoBlack-repeat:   $logos-largeLogoBlack-repeat,
+ 
+   $logos-largeLogoBordeaux-position: $logos-largeLogoBordeaux-position, 
+   $logos-largeLogoBordeaux-spacing:  $logos-largeLogoBordeaux-spacing, 
+   $logos-largeLogoBordeaux-repeat:   $logos-largeLogoBordeaux-repeat,
+ 
+   $logos-largeLogoWhite-position: $logos-largeLogoWhite-position, 
+   $logos-largeLogoWhite-spacing:  $logos-largeLogoWhite-spacing, 
+   $logos-largeLogoWhite-repeat:   $logos-largeLogoWhite-repeat,
+ 
+   $logos-lyft-logo-position: $logos-lyft-logo-position, 
+   $logos-lyft-logo-spacing:  $logos-lyft-logo-spacing, 
+   $logos-lyft-logo-repeat:   $logos-lyft-logo-repeat,
+ 
+   $logos-medLogoBordeaux-position: $logos-medLogoBordeaux-position, 
+   $logos-medLogoBordeaux-spacing:  $logos-medLogoBordeaux-spacing, 
+   $logos-medLogoBordeaux-repeat:   $logos-medLogoBordeaux-repeat,
+ 
+ $layout   : $logos-layout,
+ $cleanup  : $logos-clean-up,
+ $spacing  : $logos-spacing,
+ $position : $logos-position,
+ $sort-by  : $logos-sort-by
+ );
+
+
+// All sprites should extend this class
+// The logos-sprite mixin will do so for you.
+@if $logos-inline {
+  #{$logos-sprite-base-class} {
+    background-image: inline-sprite($logos-sprites);
+  } 
+} @else {
+  #{$logos-sprite-base-class} {
+    background-image: $logos-sprites;
+    background-repeat: no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function logos-sprite-width($name) {
+    @return sprite-width($logos-sprites, $name);
+  }
+
+  @function logos-sprite-height($name) {
+    @return sprite-height($logos-sprites, $name);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin logos-sprite-dimensions($name) {
+  @include sprite-dimensions($logos-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin logos-sprite-position($name, $offset-x: 0, $offset-y: 0, $use-percentages: $logos-use-percentages) {
+  @include sprite-background-position($logos-sprites, $name, $offset-x, $offset-y, $use-percentages)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin logos-sprite($name, $dimensions: $logos-sprite-dimensions, $offset-x: 0, $offset-y: 0, $use-percentages: $logos-use-percentages, $separator: $logos-class-separator) {
+  @extend #{$logos-sprite-base-class};
+  @include sprite($logos-sprites, $name, $dimensions, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
+
+@mixin logos-sprites($sprite-names, $dimensions: $logos-sprite-dimensions, $prefix: sprite-map-name($logos-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $logos-use-percentages, $separator: $logos-class-separator) {
+  @include sprites($logos-sprites, $sprite-names, $logos-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator)
+}
+
+// Generates a class for each sprited image.
+@mixin all-logos-sprites($dimensions: $logos-sprite-dimensions, $prefix: sprite-map-name($logos-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $logos-use-percentages, $separator: $logos-class-separator) {
+  @include logos-sprites(circle-logo jawbone-logo largeLogoBlack largeLogoBordeaux largeLogoWhite lyft-logo medLogoBordeaux, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}

@@ -1,0 +1,225 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$icons-sprite-dimensions : false !default;
+$icons-use-percentages   : false !default;
+$icons-position          : 0% !default;
+$icons-spacing           : 0 !default;
+$icons-repeat            : no-repeat !default;
+$icons-prefix            : '' !default;
+$icons-clean-up          : true !default;
+$icons-layout            : vertical !default;
+$icons-inline            : false !default;
+$icons-sort-by           : 'none' !default;
+$icons-class-separator   : $default-sprite-separator !default;
+$icons-sprite-base-class : ".icons#{$icons-class-separator}sprite" !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $icons-dribbble-icon-inactive-position: $icons-position !default;
+   $icons-dribbble-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-dribbble-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-dribbble-icon-position: $icons-position !default;
+   $icons-dribbble-icon-spacing:  $icons-spacing !default;
+   $icons-dribbble-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-email-icon-inactive-position: $icons-position !default;
+   $icons-email-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-email-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-email-icon-position: $icons-position !default;
+   $icons-email-icon-spacing:  $icons-spacing !default;
+   $icons-email-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-fb-icon-inactive-position: $icons-position !default;
+   $icons-fb-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-fb-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-fb-icon-position: $icons-position !default;
+   $icons-fb-icon-spacing:  $icons-spacing !default;
+   $icons-fb-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-github-icon-inactive-position: $icons-position !default;
+   $icons-github-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-github-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-github-icon-position: $icons-position !default;
+   $icons-github-icon-spacing:  $icons-spacing !default;
+   $icons-github-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-insta-icon-inactive-position: $icons-position !default;
+   $icons-insta-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-insta-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-insta-icon-position: $icons-position !default;
+   $icons-insta-icon-spacing:  $icons-spacing !default;
+   $icons-insta-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-link-icon-position: $icons-position !default;
+   $icons-link-icon-spacing:  $icons-spacing !default;
+   $icons-link-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-linkedin-icon-inactive-position: $icons-position !default;
+   $icons-linkedin-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-linkedin-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-linkedin-icon-position: $icons-position !default;
+   $icons-linkedin-icon-spacing:  $icons-spacing !default;
+   $icons-linkedin-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-monogram-position: $icons-position !default;
+   $icons-monogram-spacing:  $icons-spacing !default;
+   $icons-monogram-repeat:   $icons-repeat !default;
+ 
+   $icons-pinterest-icon-inactive-position: $icons-position !default;
+   $icons-pinterest-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-pinterest-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-pinterest-icon-position: $icons-position !default;
+   $icons-pinterest-icon-spacing:  $icons-spacing !default;
+   $icons-pinterest-icon-repeat:   $icons-repeat !default;
+ 
+   $icons-twitter-icon-inactive-position: $icons-position !default;
+   $icons-twitter-icon-inactive-spacing:  $icons-spacing !default;
+   $icons-twitter-icon-inactive-repeat:   $icons-repeat !default;
+ 
+   $icons-twitter-icon-position: $icons-position !default;
+   $icons-twitter-icon-spacing:  $icons-spacing !default;
+   $icons-twitter-icon-repeat:   $icons-repeat !default;
+ 
+
+ $icons-sprites: sprite-map("icons/*.png",
+ 
+   $icons-dribbble-icon-inactive-position: $icons-dribbble-icon-inactive-position, 
+   $icons-dribbble-icon-inactive-spacing:  $icons-dribbble-icon-inactive-spacing, 
+   $icons-dribbble-icon-inactive-repeat:   $icons-dribbble-icon-inactive-repeat,
+ 
+   $icons-dribbble-icon-position: $icons-dribbble-icon-position, 
+   $icons-dribbble-icon-spacing:  $icons-dribbble-icon-spacing, 
+   $icons-dribbble-icon-repeat:   $icons-dribbble-icon-repeat,
+ 
+   $icons-email-icon-inactive-position: $icons-email-icon-inactive-position, 
+   $icons-email-icon-inactive-spacing:  $icons-email-icon-inactive-spacing, 
+   $icons-email-icon-inactive-repeat:   $icons-email-icon-inactive-repeat,
+ 
+   $icons-email-icon-position: $icons-email-icon-position, 
+   $icons-email-icon-spacing:  $icons-email-icon-spacing, 
+   $icons-email-icon-repeat:   $icons-email-icon-repeat,
+ 
+   $icons-fb-icon-inactive-position: $icons-fb-icon-inactive-position, 
+   $icons-fb-icon-inactive-spacing:  $icons-fb-icon-inactive-spacing, 
+   $icons-fb-icon-inactive-repeat:   $icons-fb-icon-inactive-repeat,
+ 
+   $icons-fb-icon-position: $icons-fb-icon-position, 
+   $icons-fb-icon-spacing:  $icons-fb-icon-spacing, 
+   $icons-fb-icon-repeat:   $icons-fb-icon-repeat,
+ 
+   $icons-github-icon-inactive-position: $icons-github-icon-inactive-position, 
+   $icons-github-icon-inactive-spacing:  $icons-github-icon-inactive-spacing, 
+   $icons-github-icon-inactive-repeat:   $icons-github-icon-inactive-repeat,
+ 
+   $icons-github-icon-position: $icons-github-icon-position, 
+   $icons-github-icon-spacing:  $icons-github-icon-spacing, 
+   $icons-github-icon-repeat:   $icons-github-icon-repeat,
+ 
+   $icons-insta-icon-inactive-position: $icons-insta-icon-inactive-position, 
+   $icons-insta-icon-inactive-spacing:  $icons-insta-icon-inactive-spacing, 
+   $icons-insta-icon-inactive-repeat:   $icons-insta-icon-inactive-repeat,
+ 
+   $icons-insta-icon-position: $icons-insta-icon-position, 
+   $icons-insta-icon-spacing:  $icons-insta-icon-spacing, 
+   $icons-insta-icon-repeat:   $icons-insta-icon-repeat,
+ 
+   $icons-link-icon-position: $icons-link-icon-position, 
+   $icons-link-icon-spacing:  $icons-link-icon-spacing, 
+   $icons-link-icon-repeat:   $icons-link-icon-repeat,
+ 
+   $icons-linkedin-icon-inactive-position: $icons-linkedin-icon-inactive-position, 
+   $icons-linkedin-icon-inactive-spacing:  $icons-linkedin-icon-inactive-spacing, 
+   $icons-linkedin-icon-inactive-repeat:   $icons-linkedin-icon-inactive-repeat,
+ 
+   $icons-linkedin-icon-position: $icons-linkedin-icon-position, 
+   $icons-linkedin-icon-spacing:  $icons-linkedin-icon-spacing, 
+   $icons-linkedin-icon-repeat:   $icons-linkedin-icon-repeat,
+ 
+   $icons-monogram-position: $icons-monogram-position, 
+   $icons-monogram-spacing:  $icons-monogram-spacing, 
+   $icons-monogram-repeat:   $icons-monogram-repeat,
+ 
+   $icons-pinterest-icon-inactive-position: $icons-pinterest-icon-inactive-position, 
+   $icons-pinterest-icon-inactive-spacing:  $icons-pinterest-icon-inactive-spacing, 
+   $icons-pinterest-icon-inactive-repeat:   $icons-pinterest-icon-inactive-repeat,
+ 
+   $icons-pinterest-icon-position: $icons-pinterest-icon-position, 
+   $icons-pinterest-icon-spacing:  $icons-pinterest-icon-spacing, 
+   $icons-pinterest-icon-repeat:   $icons-pinterest-icon-repeat,
+ 
+   $icons-twitter-icon-inactive-position: $icons-twitter-icon-inactive-position, 
+   $icons-twitter-icon-inactive-spacing:  $icons-twitter-icon-inactive-spacing, 
+   $icons-twitter-icon-inactive-repeat:   $icons-twitter-icon-inactive-repeat,
+ 
+   $icons-twitter-icon-position: $icons-twitter-icon-position, 
+   $icons-twitter-icon-spacing:  $icons-twitter-icon-spacing, 
+   $icons-twitter-icon-repeat:   $icons-twitter-icon-repeat,
+ 
+ $layout   : $icons-layout,
+ $cleanup  : $icons-clean-up,
+ $spacing  : $icons-spacing,
+ $position : $icons-position,
+ $sort-by  : $icons-sort-by
+ );
+
+
+// All sprites should extend this class
+// The icons-sprite mixin will do so for you.
+@if $icons-inline {
+  #{$icons-sprite-base-class} {
+    background-image: inline-sprite($icons-sprites);
+  } 
+} @else {
+  #{$icons-sprite-base-class} {
+    background-image: $icons-sprites;
+    background-repeat: no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function icons-sprite-width($name) {
+    @return sprite-width($icons-sprites, $name);
+  }
+
+  @function icons-sprite-height($name) {
+    @return sprite-height($icons-sprites, $name);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin icons-sprite-dimensions($name) {
+  @include sprite-dimensions($icons-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin icons-sprite-position($name, $offset-x: 0, $offset-y: 0, $use-percentages: $icons-use-percentages) {
+  @include sprite-background-position($icons-sprites, $name, $offset-x, $offset-y, $use-percentages)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin icons-sprite($name, $dimensions: $icons-sprite-dimensions, $offset-x: 0, $offset-y: 0, $use-percentages: $icons-use-percentages, $separator: $icons-class-separator) {
+  @extend #{$icons-sprite-base-class};
+  @include sprite($icons-sprites, $name, $dimensions, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
+
+@mixin icons-sprites($sprite-names, $dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $icons-use-percentages, $separator: $icons-class-separator) {
+  @include sprites($icons-sprites, $sprite-names, $icons-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator)
+}
+
+// Generates a class for each sprited image.
+@mixin all-icons-sprites($dimensions: $icons-sprite-dimensions, $prefix: sprite-map-name($icons-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $icons-use-percentages, $separator: $icons-class-separator) {
+  @include icons-sprites(dribbble-icon-inactive dribbble-icon email-icon-inactive email-icon fb-icon-inactive fb-icon github-icon-inactive github-icon insta-icon-inactive insta-icon link-icon linkedin-icon-inactive linkedin-icon monogram pinterest-icon-inactive pinterest-icon twitter-icon-inactive twitter-icon, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
