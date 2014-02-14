@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 184, icons/*.png */
 .icons-sprite, .icons-dribbble-icon-inactive, .icons-dribbble-icon, .icons-email-icon-inactive, .icons-email-icon, .icons-fb-icon-inactive, .icons-fb-icon, .icons-github-icon-inactive, .icons-github-icon, .icons-insta-icon-inactive, .icons-insta-icon, .icons-link-icon, .icons-linkedin-icon-inactive, .icons-linkedin-icon, .icons-monogram, .icons-pinterest-icon-inactive, .icons-pinterest-icon, .icons-twitter-icon-inactive, .icons-twitter-icon {
-  background-image: url('/images/icons-s7ad18de93e.png');
+  background-image: url('../images/icons-s7ad18de93e.png');
   background-repeat: no-repeat;
 }
 
@@ -165,7 +165,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 104, logos/*.png */
 .logos-sprite, .logos-MAYA_logo, .logos-circle-logo, .logos-jawbone-logo, .logos-largeLogoBlack, .logos-largeLogoBordeaux, .logos-largeLogoWhite, .logos-lyft-logo, .logos-medLogoBordeaux {
-  background-image: url('/images/logos-s687d3451e8.png');
+  background-image: url('../images/logos-s687d3451e8.png');
   background-repeat: no-repeat;
 }
 

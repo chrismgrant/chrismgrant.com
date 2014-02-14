@@ -8,26 +8,51 @@
   <title>/// Chris Grant</title>
   <script type="text/javascript" src="//use.typekit.net/jnq2fhm.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="stylesheets/screen.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="stylesheets/ie.css"/>
+	<link rel="stylesheet" href="stylesheets/print.css"/>
+	<link rel="stylesheet" href="stylesheets/screen.css"/>
   <link rel="stylesheet" href="stylesheets/styles.css"/>
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-  <ul class="nav">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+	
+		<div class="container"  style="style="background-color: #f2f2f2; background-image: none; color: #642a38; font: 18px myriad-pro">
+			<span class="logo-largeLogoBordeaux"></span>
+			
+	  <ul>
+	    <li><a href="#/view1">view1</a></li>
+	    <li><a href="#/view2">view2</a></li>
+	  </ul>
 
-  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
+	  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
   	
-  </div>
-
-  <div style="font-size: 24px; font-family: adobe-garamond-pro; font-weight: 400">Angular seed app: v<span app-version></span>
-	  <p style="font-family: Proxima Nova"> Angular</p>
-  </div>
-	<footer>
-		footer
+	  </div>
+	</div>
+	<footer style="background-color: #642a38; color: #868686; font: 14px myriad-pro">
+		<div class="container">
+				<div class="col-md-4 col-xs-12 pull-left">
+					Currently, residing in San Francisco, CA
+						and interested in freelance or other opportunities.
+				</div>
+				<div class="col-md-8 col-xs-12">
+					<ul>
+						<li style="display: inline"> <a href="mailto:christopher.michael.grant@gmail.com" class="icons-email-icon-inactive"></a></li>
+						<li style="display: inline"><a href="" class="icons-fb-icon-inactive" title="email"></a></li>
+						<li style="display: inline"><a href="" class="icons-pinterest-icon-inactive" title="pinterest"></a></li>
+						<li style="display: inline"><a href="" class="icons-dribbble-icon-inactive" title="dribbble"></a></li>
+						<li style="display: inline"><a href="" class="icons-linkedin-icon-inactive" title="linkedin"></a></li>
+						<li style="display: inline"><a href="" class="icons-instagram-icon-inactive" title="instagram"></a></li>
+						<li style="display: inline"><a href="" class="icons-twitter-icon-inactive" title="twitter"></a></li>
+						<li style="display: inline"><a href="" class="icons-github-icon-inactive" title="github"></a></li>
+					</ul>
+				</div>
+		</div>
 	</footer>
+	<script>
+		$('body').css({'background-image': 'url(images/coverphotos/' + Math.floor(Math.random() * 27) + '.jpg)'});
+		$('body').css({'background-size': 'cover'});
+		$('body').css({'background-repeat': 'no-repeat'});
+	</script>	 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -39,6 +64,9 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
   <script src="javascripts/bootstrap/dropdown.js"></script>
+  <script src="javascripts/bootstrap/collapse.js"></script>
+  <script src="javascripts/bootstrap/affix.js"></script>
+  <script src="javascripts/bootstrap/transition.js"></script>
   <script src="javascripts/bootstrap/scrollspy.js"></script>
   <script src="javascripts/bootstrap/carousel.js"></script>
 </body>
