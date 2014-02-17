@@ -57,6 +57,9 @@
 		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
 		$('.jumbotron').css({'background-size': 'cover'});
 		$('.jumbotron').css({'background-repeat': 'no-repeat'});
+		if (picture != 9){
+			$('.jumbotron').css({'background-position-y': '-150px'});
+		}
 	</script>	 
 	
   <!-- In production use:
