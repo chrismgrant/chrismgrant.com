@@ -2,32 +2,66 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
   <link rel="shortcut icon" type="image/ico" href="favicons/favicon.ico">
   <title>/// Chris Grant</title>
   <script type="text/javascript" src="//use.typekit.net/jnq2fhm.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="stylesheets/screen.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="stylesheets/ie.css"/>
+	<link rel="stylesheet" href="stylesheets/print.css"/>
+	<link rel="stylesheet" href="stylesheets/screen.css"/>
   <link rel="stylesheet" href="stylesheets/styles.css"/>
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-  <ul class="nav">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
-
-  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
-  	
-  </div>
-
-  <div style="font-size: 24px; font-family: adobe-garamond-pro; font-weight: 400">Angular seed app: v<span app-version></span>
-	  <p style="font-family: Proxima Nova"> Angular</p>
-  </div>
+	<div class="jumbotron"> 
+		<div id="cg-masthead-logo">
+		</div>
+	</div>
+	<div class="navbar" style="style="background-color: blue; color: #642a38; font-size: 18px; font-family: proxima-nova; font-weight: 400">
+	  <ul>
+	    <li><a href="#/view1">view1</a></li>
+	    <li><a href="#/view2">view2</a></li>
+	  </ul>
+	</div>
+	<div class="container">
+	  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
+	  </div>
+	</div>
 	<footer>
-		footer
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-4 col-md-4 col-xs-12 current-status">
+						Currently, residing in San Francisco, CA
+						<p>and interested in freelance or other opportunities.</p>
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-12">
+						<ul class="social">
+							<li> <a href="mailto:christopher.michael.grant@gmail.com" class="icons-email-icon-inactive social-icon"></a></li>
+							<li><a href="http://www.facebook.com/cmgrant" class="icons-fb-icon-inactive social-icon" title="facebook"></a></li>
+							<li><a href="http://www.pinterest.com/chrgra" class="icons-pinterest-icon-inactive social-icon" title="pinterest"></a></li>
+							<li><a href="http://www.dribbble.com/chrismgrant" class="icons-dribbble-icon-inactive social-icon" title="dribbble"></a></li>
+							<li><a href="http://www.linkedin.com/pub/chris-grant/39/682/249/" class="icons-linkedin-icon-inactive social-icon" title="linkedin"></a></li>
+							<li><a href="http://www.instagram.com/grizzygrant" class="icons-insta-icon-inactive social-icon" title="instagram"></a></li>
+							<li><a href="http://www.twitter.com/chrgra" class="icons-twitter-icon-inactive social-icon" title="twitter"></a></li>
+							<li><a href="http://www.github.com/chrismgrant" class="icons-github-icon-inactive social-icon" title="github"></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
 	</footer>
+	<script>
+		var picture = Math.floor(Math.random() * 31);
+		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
+		$('.jumbotron').css({'background-size': 'cover'});
+		$('.jumbotron').css({'background-repeat': 'no-repeat'});
+		if (picture != 9){
+			$('.jumbotron').css({'background-position-y': '-150px'});
+		}
+	</script>	 
+	
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -39,6 +73,9 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
   <script src="javascripts/bootstrap/dropdown.js"></script>
+  <script src="javascripts/bootstrap/collapse.js"></script>
+  <script src="javascripts/bootstrap/affix.js"></script>
+  <script src="javascripts/bootstrap/transition.js"></script>
   <script src="javascripts/bootstrap/scrollspy.js"></script>
   <script src="javascripts/bootstrap/carousel.js"></script>
 </body>
