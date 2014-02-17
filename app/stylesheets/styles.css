@@ -7611,7 +7611,7 @@ footer {
   width: 100%;
   position: fixed;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   bottom: 0;
   left: 0;
 }
@@ -7739,4 +7739,5 @@ div#cg-masthead-logo {
   margin-top: 1px;
   width: 50px;
   height: 48px;
+  margin-left: 10px;
 }

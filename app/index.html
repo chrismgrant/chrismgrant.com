@@ -61,8 +61,33 @@
 		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
 		$('.jumbotron').css({'background-size': 'cover'});
 		$('.jumbotron').css({'background-repeat': 'no-repeat'});
-		if (picture != 9){
-			$('.jumbotron').css({'background-position-y': '-150px'});
+		switch(picture){
+			case 0:
+				$('.jumbotron').css({'background-position-y': '-85px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBordeaux.png)'});
+				break;
+			case 9:
+				$('.jumbotron').css({'background-position-y': '0px'});
+				break;
+			case 10:
+				$('.jumbotron').css({'background-position-y': '-100px'});
+				break;
+			case 15:
+				$('.jumbotron').css({'background-position-y': '-240px'});
+				break;
+			case 17:
+				$('.jumbotron').css({'background-position-y': '-308px'});
+				break;
+			case 18:
+				$('.jumbotron').css({'background-position-y': '-388px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBlack.png)'});
+				break;
+			case 23:
+				$('.jumbotron').css({'background-position-y': '-63px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBordeaux.png)'});
+				break;
+			default:
+				$('.jumbotron').css({'background-position-y': '-150px'});
 		}
 	</script>	 
 	
