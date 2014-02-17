@@ -2,6 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
   <link rel="shortcut icon" type="image/ico" href="favicons/favicon.ico">
@@ -15,44 +16,49 @@
   <link rel="stylesheet" href="stylesheets/styles.css"/>
 </head>
 <body>
-	
-		<div class="container"  style="style="background-color: #f2f2f2; background-image: none; color: #642a38; font: 18px myriad-pro">
-			<span class="logo-largeLogoBordeaux"></span>
-			
+	<div class="jumbotron"> 
+		<div id="cg-masthead-logo">
+		</div>
+	</div>
+	<div class="navbar" style="style="background-color: blue; color: #642a38; font-size: 18px; font-family: proxima-nova; font-weight: 400">
 	  <ul>
 	    <li><a href="#/view1">view1</a></li>
 	    <li><a href="#/view2">view2</a></li>
 	  </ul>
-
+	</div>
+	<div class="container">
 	  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
-  	
 	  </div>
 	</div>
-	<footer style="background-color: #642a38; color: #868686; font: 14px myriad-pro">
+	<footer>
 		<div class="container">
-				<div class="col-md-4 col-xs-12 pull-left">
-					Currently, residing in San Francisco, CA
-						and interested in freelance or other opportunities.
-				</div>
-				<div class="col-md-8 col-xs-12">
-					<ul>
-						<li style="display: inline"> <a href="mailto:christopher.michael.grant@gmail.com" class="icons-email-icon-inactive"></a></li>
-						<li style="display: inline"><a href="" class="icons-fb-icon-inactive" title="email"></a></li>
-						<li style="display: inline"><a href="" class="icons-pinterest-icon-inactive" title="pinterest"></a></li>
-						<li style="display: inline"><a href="" class="icons-dribbble-icon-inactive" title="dribbble"></a></li>
-						<li style="display: inline"><a href="" class="icons-linkedin-icon-inactive" title="linkedin"></a></li>
-						<li style="display: inline"><a href="" class="icons-instagram-icon-inactive" title="instagram"></a></li>
-						<li style="display: inline"><a href="" class="icons-twitter-icon-inactive" title="twitter"></a></li>
-						<li style="display: inline"><a href="" class="icons-github-icon-inactive" title="github"></a></li>
-					</ul>
+			<div class="row">
+					<div class="col-lg-4 col-md-4 col-xs-12 current-status">
+						Currently, residing in San Francisco, CA
+						<p>and interested in freelance or other opportunities.</p>
+					</div>
+					<div class="col-lg-8 col-md-8 col-xs-12">
+						<ul class="social">
+							<li> <a href="mailto:christopher.michael.grant@gmail.com" class="icons-email-icon-inactive social-icon"></a></li>
+							<li><a href="http://www.facebook.com/cmgrant" class="icons-fb-icon-inactive social-icon" title="facebook"></a></li>
+							<li><a href="http://www.pinterest.com/chrgra" class="icons-pinterest-icon-inactive social-icon" title="pinterest"></a></li>
+							<li><a href="http://www.dribbble.com/chrismgrant" class="icons-dribbble-icon-inactive social-icon" title="dribbble"></a></li>
+							<li><a href="http://www.linkedin.com/pub/chris-grant/39/682/249/" class="icons-linkedin-icon-inactive social-icon" title="linkedin"></a></li>
+							<li><a href="http://www.instagram.com/grizzygrant" class="icons-insta-icon-inactive social-icon" title="instagram"></a></li>
+							<li><a href="http://www.twitter.com/chrgra" class="icons-twitter-icon-inactive social-icon" title="twitter"></a></li>
+							<li><a href="http://www.github.com/chrismgrant" class="icons-github-icon-inactive social-icon" title="github"></a></li>
+						</ul>
+					</div>
 				</div>
 		</div>
 	</footer>
 	<script>
-		$('body').css({'background-image': 'url(images/coverphotos/' + Math.floor(Math.random() * 27) + '.jpg)'});
-		$('body').css({'background-size': 'cover'});
-		$('body').css({'background-repeat': 'no-repeat'});
+		var picture = Math.floor(Math.random() * 31);
+		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
+		$('.jumbotron').css({'background-size': 'cover'});
+		$('.jumbotron').css({'background-repeat': 'no-repeat'});
 	</script>	 
+	
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->

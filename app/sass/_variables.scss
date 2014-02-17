@@ -9,28 +9,29 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
+//## brand colors for use across Bootstrap.
 
-//$gray-darker:            lighten(#000, 13.5%); // #222
-//$gray-dark:              lighten(#000, 20%);   // #333
-//$gray:                   lighten(#000, 33.5%); // #555
-//$gray-light:             lighten(#000, 60%);   // #999
-//$gray-lighter:           lighten(#000, 93.5%); // #eee
 
-//$brand-primary:         #428bca;
-//$brand-success:         #5cb85c;
-//$brand-info:            #5bc0de;
-//$brand-warning:         #f0ad4e;
-//$brand-danger:          #d9534f;
+$gray:                  #c1c1c1;
+$gray-light:            #f2f2f2;   
+
+$blue: 									#75b2dd;
+
+$bordeaux: 							#642a38;
+$bordeaux-light:			 	#868686;
+
+$crimson: 							#ca0814;
+
+$orange:								#fb5b26;
 
 //== Scaffolding
 //
 // ## Settings for some of the most global styles.
 
 //* Background color for `<body>`.
-//$body-bg:               #fff;
+$body-bg:               transparent;
 //* Global text color on `<body>`.
-//$text-color:            $gray-dark;
+$text-color:            $bordeaux;
 
 //* Global textual link color.
 //$link-color:            $brand-primary;
@@ -41,22 +42,22 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-//$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:  "myriad-pro-n4", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       "adobe-garamond-pro-n4","adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-//$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-//$font-family-base:        $font-family-sans-serif;
+$font-family-monospace:   "proxima-nova-n4", "proxima-nova", Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
 
-//$font-size-base:          14px;
-//$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
-//$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+$font-size-base:          14px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
-//$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
-//$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
-//$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
-//$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
-//$font-size-h5:            $font-size-base;
-//$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
 //* Unit-less `line-height` for use in components like buttons.
 //$line-height-base:        1.428571429; // 20/14
@@ -285,9 +286,9 @@
 //## Define your custom responsive grid.
 
 //* Number of columns in the grid.
-//$grid-columns:              12;
+$grid-columns:              12;
 //* Padding between columns. Gets divided in half for the left and right.
-//$grid-gutter-width:         30px;
+$grid-gutter-width:         0px;
 // Navbar collapse
 //* Point at which the navbar becomes uncollapsed.
 //$grid-float-breakpoint:     $screen-sm-min;
