@@ -2,37 +2,119 @@ body {
 	background-color: $gray-light;
 }
 
+a {
+	color: $bordeaux;
+	&:hover{
+		color: $crimson;
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin-bottom: 0px;
+}
+
 footer {
 	background-color: $bordeaux;
 	color: $bordeaux-light;
 	width: 100%;
-	position: relative;
+	position: fixed;
+	padding-top: 25px;
+	padding-bottom: 35px;
+	bottom: 0;
+	left: 0;
 }
 
+.jumbotron:first-of-type{
+	margin-bottom: 0px;
+} 
 
 .social-icon {
 	display: block;
-	height: 50px;
-	width: 50px;
+	height: 53px;
+	width: 70px;
 }
 
-.social{
+.social {
 	margin: 0 auto;
-	li{
+	li {
 		display: inline-block;
+		margin-top: 5px;
 	}
 }
 
-.current-status{
+.current-status {
 	margin-top: 5px;
 	line-height: 25px;
 	text-align: left;
 }
 
-div#cg-masthead-logo{
+div#cg-masthead-logo {
 	height: 99px;
 	width: 514px;
 	background-image: url("../images/logos/largeLogoWhite.png");
 	background-repeat: no-repeat;
 	margin: 0 auto;
+}
+
+.main {
+	color: $bordeaux;
+	font-weight: 400;
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+	p {
+		font-size: $font-size-large;
+	}
+}
+.navbar {
+	border-bottom: 1px solid $gray;
+	border-top: 1px solid $gray-shadow;
+	border-radius: 0px;
+	ul{
+		float: right;
+		li {
+				font-family: $font-family-nav;
+				font-size: $font-size-large;
+				display: inline-block;
+				margin-right: 12px;
+				border-left: 1px solid $gray;
+				min-height: 50px;
+				a {
+					line-height: 50px;
+					padding-left: 12px;
+					text-transform: lowercase;
+				}
+			}	
+	}
+}
+
+.icons-email-icon-inactive:hover {
+	background-position: 0 -197px;
+}
+.icons-fb-icon-inactive:hover {
+	background-position: 0 -328px;
+}
+.icons-pinterest-icon-inactive:hover {
+	background-position: 0 -968px;
+}
+.icons-github-icon-inactive:hover{
+	background-position: 0 -466px;
+}
+.icons-dribbble-icon-inactive:hover {
+	background-position: 0 -70px;
+}
+.icons-insta-icon-inactive:hover {
+	background-position: 0 -595px;
+}
+.icons-linkedin-icon-inactive:hover {
+  background-position: 0 -783px;
+}
+.icons-twitter-icon-inactive:hover {
+  background-position: 0 -1097px;
+}
+.icons-monogram {
+	margin-top: 1px;
+	width: 50px;
+	height: 48px;
 }

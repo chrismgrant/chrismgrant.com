@@ -14,7 +14,7 @@
 
 $gray:                  #c1c1c1;
 $gray-light:            #f2f2f2;   
-
+$gray-shadow: 					#717172;
 $blue: 									#75b2dd;
 
 $bordeaux: 							#642a38;
@@ -41,14 +41,14 @@ $text-color:            $bordeaux;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
+$font-family-nav:					"proxima-nova-n4", "proxima-nova", Helvetica, Arial, sans-serif;
 $font-family-sans-serif:  "myriad-pro-n4", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       "adobe-garamond-pro-n4","adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   "proxima-nova-n4", "proxima-nova", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$font-size-base:          14.4px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
