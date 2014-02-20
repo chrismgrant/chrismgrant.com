@@ -15,24 +15,25 @@
 	<link rel="stylesheet" href="stylesheets/screen.css"/>
   <link rel="stylesheet" href="stylesheets/styles.css"/>
 </head>
-<body ng-controller="MainCtrl">
+<body>
 	<div class="jumbotron"> 
+		<a href="#">
 		<div id="cg-masthead-logo">
+			
 		</div>
+	</a>
 	</div>
 	<div class="navbar">
 		<div class="icons-monogram navbar-brand">
 		</div>
 	  <ul>
-			<li><a href="/about" title="about">about</a></li>
-			<li><a href="/works" title="works">works</a></li>
-			<li><a href="/thoughts" title="thoughts">thoughts</a></li>
-			<li><a href="/resume" title="resume">resume</a></li>
+			<li><a href="#about" title="about">about</a></li>
+			<li><a href="#works" title="works">works</a></li>
+			<li><a href="#thoughts" title="thoughts">thoughts</a></li>
+			<li><a href="#resume" title="resume">resume</a></li>
 	  </ul>
 	</div>
-	<div class="container main">
-	  <div ng-view>
-	  </div>
+	<div ng-view class="main-content">
 	</div>
 	<footer>
 		<div class="container">

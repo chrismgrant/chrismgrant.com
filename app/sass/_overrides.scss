@@ -18,11 +18,11 @@ footer {
 	background-color: $bordeaux;
 	color: $bordeaux-light;
 	width: 100%;
-	position: fixed;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	clear: both;
+	min-height: 100px;
 	bottom: 0;
-	left: 0;
+	position: relative;
 }
 
 .jumbotron:first-of-type{
@@ -118,4 +118,44 @@ div#cg-masthead-logo {
 	width: 50px;
 	height: 48px;
 	margin-left: 10px;
+}
+
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.shot{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-shot{
+	padding-bottom: 20px;
+	border-bottom: 1px solid $gray;
+}
+
+blockquote {
+	font-size: 15px;
+	margin: 20px;
+	border: none;
+}
+#background{
+	border-top: 1px solid $gray;
+}
+.biography {
+	border-right: 1px solid $gray;
+}
+.main-content {
+	min-height: 412px;
+}
+.bkgrnd-processes {
+	blockquote {
+		font-size: $font-size-large;
+		font-family: "myriad-pro-i4", "myriad-pro";
+		font-weight: 400;
+		font-style: italic;
+		margin-top: 250px;
+	}
 }

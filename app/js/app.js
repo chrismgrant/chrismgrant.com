@@ -10,13 +10,20 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
+	$routeProvider.when('/', {templateUrl: 'partials/home.html'});
   $routeProvider.when('/about', {templateUrl: 'partials/about.html'});
-  $routeProvider.when('/works', {templateUrl: 'partials/works.html'});
 	$routeProvider.when('/thoughts', {templateUrl: 'partials/thoughts.html'});
-	$routeProvider.when('/thoughts', {templateUrl: 'partials/resume.html'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+	$routeProvider.when('/resume', {templateUrl: 'partials/resume.html'});
+	$routeProvider.when('/works', {templateUrl: 'partials/works.html'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
 
-function MainCtrl($scope) {
-	
+function IntroCtrl($scope){
+	$scope.positions = [
+		{value: 1, name: 'User Experience Designer'},
+		{value: 2, name: 'Product Designer'},
+		{value: 3, name: 'Front-end Developer'},
+		{value: 4, name: 'Product Manager'}
+	];
+	$scope.position = $scope.positions[0];
 }
