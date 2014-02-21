@@ -7793,3 +7793,9 @@ blockquote {
   font-style: italic;
   margin-top: 250px;
 }
+
+/* line 162, ../sass/_overrides.scss */
+.thumbnail {
+  border-radius: 0px;
+  background-color: white;
+}
