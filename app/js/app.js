@@ -26,13 +26,13 @@ config(['$routeProvider', function($routeProvider) {
 
 function IntroCtrl($scope){
 	$scope.positions = [
-		{value: 1, name: 'User Experience Designer'},
+		{value: 1, name: 'UX Designer'},
 		{value: 2, name: 'Product Designer'},
 		{value: 3, name: 'Front-end Developer'},
 		{value: 4, name: 'Photographer'},
 		{value: 5, name: 'Cyclist'},
 		{value: 6, name: 'Denim Enthusiast'},
-		{value: 7, name: 'Extreme Pillow Fighter'}
+		{value: 7, name: 'Pro Pillow Fighter'}
 	];
 	$scope.position = $scope.positions[0];
 }

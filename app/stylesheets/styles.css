@@ -7799,3 +7799,36 @@ blockquote {
   border-radius: 0px;
   background-color: white;
 }
+
+/* line 166, ../sass/_overrides.scss */
+.tag {
+  padding: 5px;
+  border: 3px solid #642a38;
+  color: #642a38;
+  font-size: 14px;
+}
+
+/* line 172, ../sass/_overrides.scss */
+.select select {
+  background: transparent;
+  color: #ca0814;
+  padding: 8px;
+  font-size: 25px;
+  line-height: 28px;
+  min-width: 300px;
+  text-align: center;
+  border-radius: 0;
+  border-color: #c1c1c1;
+  -webkit-appearance: none;
+}
+
+/* line 184, ../sass/_overrides.scss */
+.select .glyphicon {
+  border-left: 1px solid #c1c1c1;
+  padding-left: 5px;
+  position: relative;
+  top: 9px;
+  margin-left: -63px;
+  color: #c1c1c1;
+  z-index: -100;
+}
