@@ -162,6 +162,29 @@ blockquote {
 .thumbnail {
 	border-radius: 0px;
 	background-color: white;
+	height: 300px;
+	width: 400px;
+	&.circle{
+		background-color: $black;
+		img {
+			margin-top: 25%;
+		}
+	}
+	&.lyft{
+		background-color: $lyft-green;
+	}
+	&.other{
+		background-color: $orange;
+	}
+	&.photography{
+		img{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 400px;
+			height: 299px;
+		}
+	}
 }
 .tag {
 	padding: 5px;
@@ -175,7 +198,7 @@ blockquote {
 	padding: 8px;
 	font-size: 25px;
 	line-height: 28px;
-	min-width: 300px;
+	min-width: 290px;
 	text-align: center;
 	border-radius: 0;
 	border-color: $gray;
