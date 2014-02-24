@@ -29,6 +29,10 @@ footer {
 	margin-bottom: 0px;
 } 
 
+.jumbotron{
+	overflow-y: hidden;
+}
+
 .social-icon {
 	display: block;
 	height: 53px;
@@ -212,4 +216,68 @@ blockquote {
 	margin-left: -63px;
 	color: $gray;
 	z-index: -100;
+}
+.company-headline {
+	margin-top: -20px;
+	height: 250px;
+	border-bottom: 1px solid $gray;
+	&.lyft {
+		background-color: $lyft-green;
+	}
+	&.jawbone, &.maya{
+		background-color: $white;
+	}
+	&.other {
+		background-color: $orange;
+	}
+	&.circle{
+		background-color: $black;
+	}
+}
+.jawbone .logos-jawbone-logo {
+	width: 400px;
+	height: 166px;
+	margin: -60px auto 0 auto;
+}
+.maya-logo {
+	width: 400px;
+	height: 200px;
+	margin: -60px auto 0 auto;
+	background-image: url('../images/maya-tile.png');
+	background-repeat: no-repeat;
+}
+.lyft-logo {
+	margin: 0 auto;
+	height: 150px;
+	width: 200px;
+	background-image: url('../images/logos/lyft-logo.png');
+	background-repeat: no-repeat;
+}
+.circle-logo {
+	margin: 0 auto;
+	height: 150px;
+	width: 400px;
+	background-image: url('../images/circle-tile.png');
+	background-repeat: no-repeat;
+}
+.catlabels {
+	ul, li {
+		display: inline;
+	}
+	li {
+		margin-left: 10px;
+	}
+}
+.photog {
+	background-image: url('../images/photogbackground.png');
+	height: 100%;
+	width: 100%;
+	background-position-y: -350px;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+}
+.tagline {
+	text-align: center;
+	color: white;
 }
