@@ -1,5 +1,6 @@
 body {
 	background-color: $gray-light;
+	text-shadow: 0 1px $white;
 }
 
 a {
@@ -50,6 +51,7 @@ footer {
 	margin-top: 5px;
 	line-height: 25px;
 	text-align: left;
+	text-shadow: 0 1px $bordeaux;
 }
 
 div#cg-masthead-logo {

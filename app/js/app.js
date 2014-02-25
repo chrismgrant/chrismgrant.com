@@ -36,3 +36,9 @@ function IntroCtrl($scope){
 	];
 	$scope.position = $scope.positions[0];
 }
+
+function GalleryCtrl($scope){
+	$scope.photos = [
+	
+	];
+}
