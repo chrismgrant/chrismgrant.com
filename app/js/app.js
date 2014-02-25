@@ -39,6 +39,17 @@ function IntroCtrl($scope){
 
 function GalleryCtrl($scope){
 	$scope.photos = [
-	
+	{url: 'images/photos/1.jpg'},
+	{url: 'images/photos/2.jpg'},
+	{url: 'images/photos/3.jpg'},
+	{url: 'images/photos/4.jpg'},
+	{url: 'images/photos/5.jpg'},
+	{url: 'images/photos/6.jpg'},
+	{url: 'images/photos/7.jpg'},
+	{url: 'images/photos/8.jpg'},
+	{url: 'images/photos/9.jpg'},
+	{url: 'images/photos/10.jpg'},
+	{url: 'images/photos/11.jpg'},
+	{url: 'images/photos/12.jpg'}
 	];
 }

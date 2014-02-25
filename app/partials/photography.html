@@ -5,16 +5,9 @@
 </div>
 <div class="row work-summary">
 		<blockquote>
-			At Lyft, my work consisted of front-end development (html, css, AngularJS) and often
-			visual/layout design for lyft.me, emails for passengers and drivers, driver support tools, and a
-			redesign for RegionCfg, a tool used for configure and updating Lyft cities and regions.
+			I've had an interest in photography since 13. I would often borrow my stepfather's camera and experiment with the different settings. 9 years later, I'm still playing around with manual camera settings. 
 		</blockquote>
 </div>
-<div class="row">
-	<div class="col-md-6">
-		fdfdfd 
-	</div>
-	<div class="col-md-6">
-		fdfdfd
-	</div>
+<div class="row section" ng-controller="GalleryCtrl">
+	<img ng-repeat="photo in photos" src="{{photo.url}}" class="img-responsive img-thumbnail">
 </div>
