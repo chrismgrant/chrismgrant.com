@@ -196,6 +196,9 @@ blockquote {
 	color: $bordeaux;
 	font-size: 14px;
 }
+.tags {
+	margin-top: 20px;
+}
 .select select{
 	background: transparent;
 	color: $crimson;
@@ -266,8 +269,12 @@ blockquote {
 	}
 	li {
 		margin-left: 10px;
+		&:first-of-type{
+			margin-left: 0px;
+		}
 	}
 }
+
 .photog {
 	background-image: url('../images/photogbackground.png');
 	height: 100%;
@@ -280,4 +287,38 @@ blockquote {
 .tagline {
 	text-align: center;
 	color: white;
+}
+.work-summary {
+	font-family: $myriad-pro-semibold;
+	font-weight:	$semibold-weight;
+	border-bottom: 1px solid $gray;
+	blockquote{
+		font-size: 20px;
+	}
+}
+.resume-summary {
+	font-size: $font-size-h3;
+	text-align: center;
+}
+.center {
+	margin: 0 auto;
+}
+
+.section {
+	padding: 20px;
+}
+.carousel-indicators {
+	li {
+		border: 1px solid $bordeaux;
+	}
+	.active{
+		background-color: $bordeaux;
+	}
+}
+.carousel-caption {
+	text-shadow: 0 1px 2px $bordeaux;
+}
+
+.bio-carousel {
+	bottom: -10px;
 }

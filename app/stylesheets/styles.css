@@ -7840,6 +7840,11 @@ blockquote {
 }
 
 /* line 199, ../sass/_overrides.scss */
+.tags {
+  margin-top: 20px;
+}
+
+/* line 202, ../sass/_overrides.scss */
 .select select {
   background: transparent;
   color: #ca0814;
@@ -7853,7 +7858,7 @@ blockquote {
   -webkit-appearance: none;
 }
 
-/* line 211, ../sass/_overrides.scss */
+/* line 214, ../sass/_overrides.scss */
 .select .glyphicon {
   border-left: 1px solid #c1c1c1;
   padding-left: 5px;
@@ -7864,37 +7869,37 @@ blockquote {
   z-index: -100;
 }
 
-/* line 220, ../sass/_overrides.scss */
+/* line 223, ../sass/_overrides.scss */
 .company-headline {
   margin-top: -20px;
   height: 250px;
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 224, ../sass/_overrides.scss */
+/* line 227, ../sass/_overrides.scss */
 .company-headline.lyft {
   background-color: #f1efeb;
 }
-/* line 227, ../sass/_overrides.scss */
+/* line 230, ../sass/_overrides.scss */
 .company-headline.jawbone, .company-headline.maya {
   background-color: white;
 }
-/* line 230, ../sass/_overrides.scss */
+/* line 233, ../sass/_overrides.scss */
 .company-headline.other {
   background-color: #fb5b26;
 }
-/* line 233, ../sass/_overrides.scss */
+/* line 236, ../sass/_overrides.scss */
 .company-headline.circle {
   background-color: black;
 }
 
-/* line 237, ../sass/_overrides.scss */
+/* line 240, ../sass/_overrides.scss */
 .jawbone .logos-jawbone-logo {
   width: 400px;
   height: 166px;
   margin: -60px auto 0 auto;
 }
 
-/* line 242, ../sass/_overrides.scss */
+/* line 245, ../sass/_overrides.scss */
 .maya-logo {
   width: 400px;
   height: 200px;
@@ -7903,7 +7908,7 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-/* line 249, ../sass/_overrides.scss */
+/* line 252, ../sass/_overrides.scss */
 .lyft-logo {
   margin: 0 auto;
   height: 150px;
@@ -7912,7 +7917,7 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-/* line 256, ../sass/_overrides.scss */
+/* line 259, ../sass/_overrides.scss */
 .circle-logo {
   margin: 0 auto;
   height: 150px;
@@ -7921,16 +7926,20 @@ blockquote {
   background-repeat: no-repeat;
 }
 
-/* line 264, ../sass/_overrides.scss */
+/* line 267, ../sass/_overrides.scss */
 .catlabels ul, .catlabels li {
   display: inline;
 }
-/* line 267, ../sass/_overrides.scss */
+/* line 270, ../sass/_overrides.scss */
 .catlabels li {
   margin-left: 10px;
 }
+/* line 272, ../sass/_overrides.scss */
+.catlabels li:first-of-type {
+  margin-left: 0px;
+}
 
-/* line 271, ../sass/_overrides.scss */
+/* line 278, ../sass/_overrides.scss */
 .photog {
   background-image: url("../images/photogbackground.png");
   height: 100%;
@@ -7941,8 +7950,54 @@ blockquote {
   color: white;
 }
 
-/* line 280, ../sass/_overrides.scss */
+/* line 287, ../sass/_overrides.scss */
 .tagline {
   text-align: center;
   color: white;
+}
+
+/* line 291, ../sass/_overrides.scss */
+.work-summary {
+  font-family: "myriad-pro-n6", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #c1c1c1;
+}
+/* line 295, ../sass/_overrides.scss */
+.work-summary blockquote {
+  font-size: 20px;
+}
+
+/* line 299, ../sass/_overrides.scss */
+.resume-summary {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* line 303, ../sass/_overrides.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 307, ../sass/_overrides.scss */
+.section {
+  padding: 20px;
+}
+
+/* line 311, ../sass/_overrides.scss */
+.carousel-indicators li {
+  border: 1px solid #642a38;
+}
+/* line 314, ../sass/_overrides.scss */
+.carousel-indicators .active {
+  background-color: #642a38;
+}
+
+/* line 318, ../sass/_overrides.scss */
+.carousel-caption {
+  text-shadow: 0 1px 2px #642a38;
+}
+
+/* line 322, ../sass/_overrides.scss */
+.bio-carousel {
+  bottom: -10px;
 }

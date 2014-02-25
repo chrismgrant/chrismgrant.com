@@ -51,6 +51,11 @@ $font-family-serif:       "adobe-garamond-pro-n4","adobe-garamond-pro", Georgia,
 $font-family-monospace:   "proxima-nova-n4", "proxima-nova", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
+$myriad-pro-semibold: 		"myriad-pro-n6", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$semibold-weight:					600;
+$myriad-pro-italic:				"myriad-pro-i4", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$italic-weight: 					400;
+
 $font-size-base:          14.4px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
