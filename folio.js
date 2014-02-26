@@ -9,5 +9,7 @@ app.get('/', function(req, res) {
   res.sendfile(__dirname + '/app/index.html');
 });
 
-
-app.listen(8000);
+var port = Number(process.env.PORT || 8000)
+app.listen(port, function(){
+	console.log("Listening on " + port);
+});
