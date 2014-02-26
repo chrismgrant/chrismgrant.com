@@ -1,38 +1,337 @@
 body {
 	background-color: $gray-light;
+	text-shadow: 0 1px $white;
+}
+
+a {
+	color: $crimson;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin-bottom: 0px;
 }
 
 footer {
 	background-color: $bordeaux;
 	color: $bordeaux-light;
 	width: 100%;
+	padding-top: 20px;
+	clear: both;
+	min-height: 100px;
+	bottom: 0;
 	position: relative;
 }
 
+.jumbotron:first-of-type{
+	margin-bottom: 0px;
+} 
+
+.jumbotron{
+	overflow-y: hidden;
+}
 
 .social-icon {
 	display: block;
-	height: 50px;
-	width: 50px;
+	height: 53px;
+	width: 70px;
 }
 
-.social{
+.social {
 	margin: 0 auto;
-	li{
+	li {
 		display: inline-block;
+		margin-top: 5px;
 	}
 }
 
-.current-status{
+.current-status {
 	margin-top: 5px;
 	line-height: 25px;
 	text-align: left;
+	text-shadow: 0 1px $bordeaux;
 }
 
-div#cg-masthead-logo{
+div#cg-masthead-logo {
 	height: 99px;
 	width: 514px;
 	background-image: url("../images/logos/largeLogoWhite.png");
 	background-repeat: no-repeat;
 	margin: 0 auto;
+}
+
+.main {
+	color: $bordeaux;
+	font-weight: 400;
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+	p {
+		font-size: $font-size-large;
+	}
+}
+.navbar {
+	border-bottom: 1px solid $gray;
+	border-top: 1px solid $gray-shadow;
+	border-radius: 0px;
+	ul{
+		float: right;
+		li {
+				font-family: $font-family-nav;
+				font-size: $font-size-large;
+				display: inline-block;
+				margin-right: 12px;
+				border-left: 1px solid $gray;
+				min-height: 50px;
+				a {
+					line-height: 50px;
+					padding-left: 12px;
+					text-transform: lowercase;
+				}
+			}	
+	}
+}
+
+.icons-email-icon-inactive:hover {
+	background-position: 0 -197px;
+}
+.icons-fb-icon-inactive:hover {
+	background-position: 0 -328px;
+}
+.icons-pinterest-icon-inactive:hover {
+	background-position: 0 -968px;
+}
+.icons-github-icon-inactive:hover{
+	background-position: 0 -466px;
+}
+.icons-dribbble-icon-inactive:hover {
+	background-position: 0 -70px;
+}
+.icons-insta-icon-inactive:hover {
+	background-position: 0 -595px;
+}
+.icons-linkedin-icon-inactive:hover {
+  background-position: 0 -783px;
+}
+.icons-twitter-icon-inactive:hover {
+  background-position: 0 -1097px;
+}
+.icons-monogram {
+	margin-top: 1px;
+	width: 50px;
+	height: 48px;
+	margin-left: 10px;
+}
+
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.shot{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-shot{
+	padding-bottom: 20px;
+	border-bottom: 1px solid $gray;
+}
+
+blockquote {
+	font-size: 15px;
+	margin: 20px;
+	border: none;
+}
+#background{
+	border-top: 1px solid $gray;
+}
+.biography {
+	border-right: 1px solid $gray;
+}
+.main-content {
+	min-height: 412px;
+}
+.bkgrnd-processes {
+	blockquote {
+		font-size: $font-size-large;
+		font-family: "myriad-pro-i4", "myriad-pro";
+		font-weight: 400;
+		font-style: italic;
+		margin-top: 250px;
+	}
+}
+.thumbnail {
+	border-radius: 0px;
+	background-color: white;
+	height: 300px;
+	width: 400px;
+	&.circle{
+		background-color: $black;
+		img {
+			margin-top: 25%;
+		}
+	}
+	&.lyft{
+		background-color: $lyft-green;
+	}
+	&.other{
+		background-color: $orange;
+	}
+	&.photography{
+		img{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 400px;
+			height: 299px;
+		}
+	}
+}
+.tag {
+	padding: 5px;
+	border: 3px solid $bordeaux;
+	color: $bordeaux;
+	font-size: 14px;
+}
+.tags {
+	margin-top: 20px;
+}
+.select select{
+	background: transparent;
+	color: $crimson;
+	padding: 8px;
+	font-size: 25px;
+	line-height: 28px;
+	min-width: 290px;
+	text-align: center;
+	border-radius: 0;
+	border-color: $gray;
+	-webkit-appearance: none;
+}
+.select .glyphicon{
+	border-left: 1px solid $gray;
+	padding-left: 5px; 
+	position: relative;
+	top: 9px;
+	margin-left: -63px;
+	color: $gray;
+	z-index: -100;
+}
+.company-headline {
+	margin-top: -20px;
+	height: 250px;
+	border-bottom: 1px solid $gray;
+	&.lyft {
+		background-color: $lyft-green;
+	}
+	&.jawbone, &.maya{
+		background-color: $white;
+	}
+	&.other {
+		background-color: #e88c8d;
+	}
+	&.circle{
+		background-color: $black;
+	}
+}
+.jawbone .logos-jawbone-logo {
+	width: 400px;
+	height: 166px;
+	margin: -60px auto 0 auto;
+}
+.maya-logo {
+	width: 400px;
+	height: 200px;
+	margin: -60px auto 0 auto;
+	background-image: url('../images/maya-tile.png');
+	background-repeat: no-repeat;
+}
+.lyft-logo {
+	margin: 0 auto;
+	height: 150px;
+	width: 200px;
+	background-image: url('../images/logos/lyft-logo.png');
+	background-repeat: no-repeat;
+}
+.circle-logo {
+	margin: 0 auto;
+	height: 150px;
+	width: 400px;
+	background-image: url('../images/circle-tile.png');
+	background-repeat: no-repeat;
+}
+.catlabels {
+	ul, li {
+		display: inline;
+	}
+	li {
+		margin-left: 10px;
+		&:first-of-type{
+			margin-left: 0px;
+		}
+	}
+}
+
+.photog {
+	background-image: url('../images/photogbackground.png');
+	height: 100%;
+	width: 100%;
+	background-position-y: -350px;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+}
+.tagline {
+	text-align: center;
+	color: white;
+}
+.work-summary {
+	font-family: $myriad-pro-semibold;
+	font-weight:	$semibold-weight;
+	border-bottom: 1px solid $gray;
+	blockquote{
+		font-size: 20px;
+	}
+}
+.resume-summary {
+	font-size: $font-size-h3;
+	text-align: center;
+}
+.center {
+	margin: 0 auto;
+}
+
+.section {
+	padding: 20px;
+}
+.carousel-indicators {
+	li {
+		border: 1px solid $bordeaux;
+	}
+	.active{
+		background-color: $bordeaux;
+	}
+}
+.carousel-caption {
+	text-shadow: 0 1px 2px $bordeaux;
+}
+
+.bio-carousel {
+	bottom: -10px;
+}
+.icons-link-icon{
+	width: 50px;
+	height: 50px;
+}
+.brief {
+	font-weight: 600;
+	font-size: $font-size-large;
+	text-align: center;
+}
+.other-summary{
+	text-align: center;
 }

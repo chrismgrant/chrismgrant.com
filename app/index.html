@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
   <link rel="shortcut icon" type="image/ico" href="favicons/favicon.ico">
-  <title>/// Chris Grant</title>
+  <title>Chris Grant</title>
   <script type="text/javascript" src="//use.typekit.net/jnq2fhm.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -17,18 +17,23 @@
 </head>
 <body>
 	<div class="jumbotron"> 
-		<div id="cg-masthead-logo">
-		</div>
+		<a href="#">
+			<div id="cg-masthead-logo">
+			</div>
+		</a>
 	</div>
-	<div class="navbar" style="style="background-color: blue; color: #642a38; font-size: 18px; font-family: proxima-nova; font-weight: 400">
+	<div class="navbar">
+		<a href="#">
+			<div class="icons-monogram navbar-brand">
+			</div>
+		</a>
 	  <ul>
-	    <li><a href="#/view1">view1</a></li>
-	    <li><a href="#/view2">view2</a></li>
+			<li><a href="#about" title="about">about</a></li>
+			<li><a href="#works" title="works">works</a></li>
+			<li><a href="https://www.dropbox.com/s/p8coyskadsbahif/resume.pdf" title="resume">résumé</a></li>
 	  </ul>
 	</div>
-	<div class="container">
-	  <div ng-view style="font-size: 24px; font-family: myriad-pro; font-weight: 600" >
-	  </div>
+	<div ng-view class="main-content">
 	</div>
 	<footer>
 		<div class="container">
@@ -39,14 +44,14 @@
 					</div>
 					<div class="col-lg-8 col-md-8 col-xs-12">
 						<ul class="social">
-							<li> <a href="mailto:christopher.michael.grant@gmail.com" class="icons-email-icon-inactive social-icon"></a></li>
-							<li><a href="http://www.facebook.com/cmgrant" class="icons-fb-icon-inactive social-icon" title="facebook"></a></li>
-							<li><a href="http://www.pinterest.com/chrgra" class="icons-pinterest-icon-inactive social-icon" title="pinterest"></a></li>
-							<li><a href="http://www.dribbble.com/chrismgrant" class="icons-dribbble-icon-inactive social-icon" title="dribbble"></a></li>
-							<li><a href="http://www.linkedin.com/pub/chris-grant/39/682/249/" class="icons-linkedin-icon-inactive social-icon" title="linkedin"></a></li>
-							<li><a href="http://www.instagram.com/grizzygrant" class="icons-insta-icon-inactive social-icon" title="instagram"></a></li>
-							<li><a href="http://www.twitter.com/chrgra" class="icons-twitter-icon-inactive social-icon" title="twitter"></a></li>
-							<li><a href="http://www.github.com/chrismgrant" class="icons-github-icon-inactive social-icon" title="github"></a></li>
+							<li id="email"> <a href="mailto:christopher.michael.grant@gmail.com" class="social-icon icons-email-icon-inactive"></a></li>
+							<li><a href="http://www.facebook.com/cmgrant" class="social-icon icons-fb-icon-inactive" title="facebook"></a></li>
+							<li><a href="http://www.pinterest.com/chrgra" class="social-icon icons-pinterest-icon-inactive" title="pinterest"></a></li>
+							<li><a href="http://www.dribbble.com/chrismgrant" class="social-icon icons-dribbble-icon-inactive" title="dribbble"></a></li>
+							<li><a href="http://www.linkedin.com/pub/chris-grant/39/682/249/" class="social-icon icons-linkedin-icon-inactive" title="linkedin"></a></li>
+							<li><a href="http://www.instagram.com/grizzygrant" class="social-icon icons-insta-icon-inactive" title="instagram"></a></li>
+							<li><a href="http://www.twitter.com/chrgra" class="social-icon icons-twitter-icon-inactive" title="twitter"></a></li>
+							<li><a href="http://www.github.com/chrismgrant" class="social-icon icons-github-icon-inactive" title="github"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -57,15 +62,37 @@
 		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
 		$('.jumbotron').css({'background-size': 'cover'});
 		$('.jumbotron').css({'background-repeat': 'no-repeat'});
-		if (picture != 9){
-			$('.jumbotron').css({'background-position-y': '-150px'});
+		switch(picture){
+			case 0:
+				$('.jumbotron').css({'background-position-y': '-85px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBordeaux.png)'});
+				break;
+			case 9:
+				$('.jumbotron').css({'background-position-y': '0px'});
+				break;
+			case 10:
+				$('.jumbotron').css({'background-position-y': '-100px'});
+				break;
+			case 15:
+				$('.jumbotron').css({'background-position-y': '-240px'});
+				break;
+			case 17:
+				$('.jumbotron').css({'background-position-y': '-308px'});
+				break;
+			case 18:
+				$('.jumbotron').css({'background-position-y': '-388px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBlack.png)'});
+				break;
+			case 23:
+				$('.jumbotron').css({'background-position-y': '-63px'});
+				$('#cg-masthead-logo').css({'background-image':'url(images/logos/largeLogoBordeaux.png)'});
+				break;
+			default:
+				$('.jumbotron').css({'background-position-y': '-150px'});
 		}
 	</script>	 
 	
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script> 
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>

@@ -14,8 +14,11 @@
 
 $gray:                  #c1c1c1;
 $gray-light:            #f2f2f2;   
-
+$gray-shadow: 					#717172;
 $blue: 									#75b2dd;
+$black: 								#000000;
+$white:									#ffffff;
+$lyft-green: 						#f1efeb;
 
 $bordeaux: 							#642a38;
 $bordeaux-light:			 	#868686;
@@ -41,14 +44,19 @@ $text-color:            $bordeaux;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
+$font-family-nav:					"proxima-nova-n4", "proxima-nova", Helvetica, Arial, sans-serif;
 $font-family-sans-serif:  "myriad-pro-n4", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       "adobe-garamond-pro-n4","adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   "proxima-nova-n4", "proxima-nova", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
+$myriad-pro-semibold: 		"myriad-pro-n6", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$semibold-weight:					600;
+$myriad-pro-italic:				"myriad-pro-i4", "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$italic-weight: 					400;
+
+$font-size-base:          14.4px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
