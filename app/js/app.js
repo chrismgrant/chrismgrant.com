@@ -12,8 +12,8 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/', {templateUrl: 'partials/home.html'});
   $routeProvider.when('/about', {templateUrl: 'partials/about.html'});
-	$routeProvider.when('/thoughts', {templateUrl: 'partials/thoughts.html'});
-	$routeProvider.when('/resume', {templateUrl: 'partials/resume.html'});
+//	$routeProvider.when('/thoughts', {templateUrl: 'partials/thoughts.html'});
+	//$routeProvider.when('/resume', {templateUrl: 'partials/resume.html'});
 	$routeProvider.when('/works', {templateUrl: 'partials/works.html'});
 	$routeProvider.when('/lyft', {templateUrl: 'partials/lyft.html'});
 	$routeProvider.when('/circle', {templateUrl: 'partials/circle.html'});

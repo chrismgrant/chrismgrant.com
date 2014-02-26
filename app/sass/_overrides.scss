@@ -232,7 +232,7 @@ blockquote {
 		background-color: $white;
 	}
 	&.other {
-		background-color: $orange;
+		background-color: #e88c8d;
 	}
 	&.circle{
 		background-color: $black;
@@ -330,5 +330,8 @@ blockquote {
 .brief {
 	font-weight: 600;
 	font-size: $font-size-large;
+	text-align: center;
+}
+.other-summary{
 	text-align: center;
 }
