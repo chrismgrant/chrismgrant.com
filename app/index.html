@@ -16,9 +16,15 @@
   <link rel="stylesheet" href="stylesheets/styles.css"/>
 </head>
 <body>
-	<div class="jumbotron"> 
+	<div class="jumbotron hidden-xs"> 
 		<a href="#">
 			<div id="cg-masthead-logo">
+			</div>
+		</a>
+	</div>
+	<div class="jumbotron visible-xs"> 
+		<a href="#">
+			<div id="icons-monogram">
 			</div>
 		</a>
 	</div>
@@ -62,6 +68,7 @@
 		$('.jumbotron').css({'background-image': 'url(images/coverphotos/' + picture + '.jpg)'});
 		$('.jumbotron').css({'background-size': 'cover'});
 		$('.jumbotron').css({'background-repeat': 'no-repeat'});
+		$('.jumbotron').css({'margin-bottom': '0px'});
 		switch(picture){
 			case 0:
 				$('.jumbotron').css({'background-position-y': '-85px'});
